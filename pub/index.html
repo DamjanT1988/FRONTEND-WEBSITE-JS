@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sv">
+<!--header-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webbutveckling vid MIUN</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<!--body-->
+<body>
+    <header>
+        <img src="bilder/header.jpg" alt="hus i Sundsvall med MIUN-logotyp" id="header"/>
+        <img src="bilder/header-mobile.jpg" alt="två studenter sitter vid datorer och diskuterar" id="header2"/>
+        </header>
+    <article id="wrapper1">
+
+    <h1>Studieöversikt</h1>
+<section class="container1">
+    <p id="ingress1"><strong>Nedan kan ni fylla i kurser för er program vid MIUN.</strong></p> 
+<!--list-->
+    <h2>Lista över kurser:</h2>
+    <ul id="courselist">
+
+    </ul>
+<!--form-->
+<p>Klicka på en kurs för att ta bort.</p>
+    <h2>Fyll i kurs:</h2>
+
+    <form>
+    
+    <label for="code">Kurskod:</label>
+    <br>
+    <input type="text" name="code" id="code">
+    <br>
+    <label for="name">Kursnamn:</label>
+    <br>
+    <input type="text" name="name" id="name">
+    <br>
+    <label for="progression">Kursprogression:</label>
+    <br>
+    <input type="text" name="progression" id="progression">
+    <br>
+    <label for="syllabus">Kursplan (länk):</label>
+    <br>
+    <input type="text" name="syllabus" id="syllabus">
+
+    <br><br>
+    <input class="btn" type="submit" value="Lägg till kurs" id="submit">
+    </form>
+    
+
+</section>
+<!--script-->
+<script src="main.js"></script>
+<!--footer-->
+<footer>
+Skapat av Damjan Tosic | Webbutveckling III (DT173G) | MIUN | Vårtermin 2022
+</footer>
+</body>
+</html>
