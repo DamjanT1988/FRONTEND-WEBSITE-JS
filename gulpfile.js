@@ -24,7 +24,7 @@ const babel = require('gulp-babel');
 const files = {
     htmlPath: "src/*.html",
 //    cssPath: "src/**/*.css",
-    jsPath: "src/JS/MAIN/*.js",
+    jsPath: "src/JS/*.js",
     jsPathClasses: "src/JS/CLASSES/*.js",
     jsPathUtilities: "src/JS/UTILITIES/*.js",
     imagePath: "src/IMAGES/*",
@@ -68,11 +68,11 @@ function jsCopy () {
     }))
     .pipe(concat('main.js'))
 //   .pipe(terser())
-    .pipe(dest('pub/JS/MAIN'))
+    .pipe(dest('pub/JS'))
 //    .pipe(browserSync.stream());
 }
 
-/*
+
 //JS-task CLASSES
 function jsCopyClasses () {
     return src(files.jsPathClasses)
@@ -83,7 +83,7 @@ function jsCopyClasses () {
     .pipe(dest('pub/JS/CLASSES'))
 //    .pipe(browserSync.stream());
 }
-*/
+
 
 /*
 //JS-task UTILITIES
@@ -118,7 +118,7 @@ function sassCopy() {
 function watchTask () {
     browserSync.init({
         server: "./pub"});
-    watch([/*files.tsPath*/, files.htmlPath, files.jsPath, files.imagePath, files.sassPath/*, files.jsPathClasses, files.jsPathUtilities*/], parallel(/*tsCopy,*/ htmlCopy, jsCopy, imageCopy, sassCopy/*, jsCopyClasses, jsCopyUtilities*/)).on('change', browserSync.stream);
+    watch([/*files.tsPath*/, files.htmlPath, files.jsPath, files.imagePath, files.sassPath, files.jsPathClasses/*, files.jsPathUtilities*/], parallel(/*tsCopy,*/ htmlCopy, jsCopy, imageCopy, sassCopy, jsCopyClasses/*, jsCopyUtilities*/)).on('change', browserSync.stream);
 }
 
 
