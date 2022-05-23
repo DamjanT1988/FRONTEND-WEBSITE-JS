@@ -1,5 +1,5 @@
 
-
+/*
 //TRANSCRIPT-TEST
 class Person {
     //assign types to variables
@@ -37,3 +37,4 @@ let notOldCar : Cars = Cars.Volvo;
 
 document.getElementById("car").innerHTML += "Kör en bil från år " + notOldCar;
 
+*/
