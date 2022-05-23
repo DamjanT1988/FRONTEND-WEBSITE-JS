@@ -1,0 +1,33 @@
+/*variabler*/
+$footer-color: gray;
+$line-color: blue;
+$button-color1: green;
+$button-color2: purple;
+$button-color3: BROwn;
+$buttonlink-color: #fec706;
+
+/*färgfunktioner*/
+$lighten-colors: lighten($line-color, 50%);
+$darken-colors: darken($footer-color, 20%);
+
+/*mixins*/
+@mixin button ($circle: false) {
+    background-color: $lighten-colors;
+    font-size: 22px;
+    padding-bottom: 5px;
+    padding-top: 3px;
+    font-weight: bold;
+
+
+    @if $circle {
+        border-radius: 30%;
+    } @else {
+        border-radius: 5%;
+    }
+}
+
+@import 'desktop';
+
+@import 'pad';
+
+@import 'mobile';

@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/*variabler*/
+/*färgfunktioner*/
+/*mixins*/
+/*desktop-enhet*/
+/*body*/
+body {
+  background-color: gray;
+  font-family: Arial, sans-serif;
+}
+
+/*sidhuvud med lite mellanrum underifrån*/
+header, footer {
+  display: inline-block;
+  width: 100%;
+  background-color: #4d4d4d;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  font-size: 150%;
+  display: inline-flex;
+  line-height: 2em;
+  padding: 0%;
+  margin-top: 5%;
+}
+
+/*global navigation med store bokstäver & arial-teckensnitt
+relativt i mitt-till höger med svart textfärg*/
+#button1 {
+  background-color: white;
+  font-size: 22px;
+  padding-bottom: 5px;
+  padding-top: 3px;
+  font-weight: bold;
+  border-radius: 30%;
+  background-color: green;
+}
+
+#button2 {
+  background-color: white;
+  font-size: 22px;
+  padding-bottom: 5px;
+  padding-top: 3px;
+  font-weight: bold;
+  border-radius: 30%;
+  background-color: purple;
+}
+
+#button3 {
+  background-color: white;
+  font-size: 22px;
+  padding-bottom: 5px;
+  padding-top: 3px;
+  font-weight: bold;
+  border-radius: 30%;
+  background-color: BROwn;
+}
+
+/*paragraftext justering; Arial i svart*/
+hr {
+  color: blue;
+  height: 0px;
+  border-style: solid;
+  border-width: 6px;
+  margin-top: 0%;
+}
+
+a {
+  background: #fec706;
+  opacity: 66%;
+  border-style: solid;
+  border-color: blue;
+  margin-bottom: 7%;
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+  font-size: 1em;
+  padding: 0%;
+  color: black;
+}
+
+p {
+  font-weight: bolder;
+  font-size: 1em;
+}
+
+/*bilder*/
+img {
+  width: 100%;
+}
+
+/*sidfoten justeras*/
+/*media query satt skärmupplösninh mellan 501-799 pixlar; surfplatta*/
+/*mobilenhet upp till 500px i bredd i stående form*/
