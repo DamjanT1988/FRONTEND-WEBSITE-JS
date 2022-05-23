@@ -11,6 +11,7 @@
 <body>
     <div id="wrapper1">
     <div id="container">
+        <h1>Kontaka oss!</h1>
     <a href="admin.php"><img src="IMAGES/logotyp.svg" id="logo" alt="logotyp"></a>
     <div class="nav">
     <!--menu-->
@@ -19,21 +20,28 @@
     <a class="menynamn" href="bookings.html">BOKA/HÄMTA</a>
     <a class="current" href="contact.html">KONTAKT</a>
     <a class="menynamn" href="about.html">OM OSS</a>
-    <h1>Kontaka oss!</h1>
 </div>
-<!--content
-
-
-
-
-
-
-
-
-
-
-
--->
+<!--content-->
+<div id="wrapperform">
+<!--create table-->
+<h2>Kontaktformulär</h2>
+<p>Fyll i nedan din fråga så återkommer vi snarast!</p>
+<form  name="formContact" id="formContact">
+    <label for="name">Ditt namn:</label>
+    <br>
+    <input type="text" name="nameguest" id="nameguest">
+    <br><br>
+    <label for="email">Ditt e-mejl:</label>
+    <br>
+    <input type="text" name="emailguest" id="emailguest">
+    <br><br>
+    <label type="content">Din fråga:</label>
+    <br>
+    <textarea form="formContact" name="contentguest" id="contentguest" rows="10" cols="45"></textarea>
+    <br><br>
+    <input type="submit" class="button2" value="Skicka fråga!">
+    <br>
+    </form>
 
 <script src="JS/main.js"></script>
 <br><br><br>

@@ -1,3 +1,25 @@
+var urlMenu = window.location.pathname;
+var filenameMenu = urlMenu.substring(urlMenu.lastIndexOf('/') + 1);
+if (filenameMenu == "menu.php") {
+    var formMenu_1 = document.getElementById('formMenu');
+    formMenu_1.onsubmit = function (event) {
+        var xhr = new XMLHttpRequest();
+        var formData2 = new FormData(formMenu_1);
+        //open the request
+        xhr.open('POST', 'http://localhost/projekt_webservice_vt22-DamjanT1988/webservice-API.php?idmenu=post');
+        xhr.setRequestHeader("Content-Type", "application/json");
+        //send the form data
+        xhr.send(JSON.stringify(Object.fromEntries(formData2)));
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == XMLHttpRequest.DONE) {
+                formMenu_1.reset(); //reset form after AJAX success or do something else
+                window.location.reload();
+            }
+        };
+        //Fail the onsubmit to avoid page refresh.
+        return false;
+    };
+}
 //TRANSCRIPT-TEST
 var Person = /** @class */ (function () {
     //constructor

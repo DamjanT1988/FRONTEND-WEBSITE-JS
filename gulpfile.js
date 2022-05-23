@@ -37,7 +37,7 @@ const files = {
 function htmlCopy () {
     return src(files.htmlPath)
     .pipe(dest('pub'))
-    .pipe(browserSync.stream());
+//    .pipe(browserSync.stream());
 }
 
 /*CSS-task 
@@ -49,6 +49,7 @@ function cssCopy () {
     .pipe(browserSync.stream());
 }*/
 
+/*
 //TS function    
 function tsCopy() {
     return src(files.tsPath)
@@ -56,8 +57,8 @@ function tsCopy() {
         noImplicitAny: true,
         outFile: 'transcript.js'
     }))
-    .pipe(dest("src/JS/MAIN"));
-}
+    .pipe(dest("src/JS"));
+}*/
 
 //JS-task
 function jsCopy () {
@@ -68,7 +69,7 @@ function jsCopy () {
     .pipe(concat('main.js'))
 //   .pipe(terser())
     .pipe(dest('pub/JS/MAIN'))
-    .pipe(browserSync.stream());
+//    .pipe(browserSync.stream());
 }
 
 //JS-task CLASSES
@@ -79,7 +80,7 @@ function jsCopyClasses () {
     }))
 //    .pipe(terser())
     .pipe(dest('pub/JS/CLASSES'))
-    .pipe(browserSync.stream());
+//    .pipe(browserSync.stream());
 }
 
 //JS-task UTILITIES
@@ -90,7 +91,7 @@ function jsCopyUtilities () {
     }))
 //    .pipe(terser())
     .pipe(dest('pub/JS/UTILITIES'))
-    .pipe(browserSync.stream());
+//    .pipe(browserSync.stream());
 }
 
 //image-task
@@ -105,7 +106,7 @@ function sassCopy() {
 //        .pipe(sourcemaps.init())
         .pipe(sass().on("error", sass.logError))
         .pipe(dest("pub"))
-        .pipe(browserSync.stream());
+//        .pipe(browserSync.stream());
 }
 
 
@@ -113,12 +114,12 @@ function sassCopy() {
 function watchTask () {
     browserSync.init({
         server: "./pub"});
-    watch([/*files.tsPath, files.htmlPath, files.jsPath, files.imagePath, files.sassPath, files.jsPathClasses, files.jsPathUtilities*/], parallel(tsCopy, htmlCopy, jsCopy, imageCopy, sassCopy, jsCopyClasses, jsCopyUtilities)).on('change', browserSync.reload);
+    watch([/*files.tsPath*/, files.htmlPath, files.jsPath, files.imagePath, files.sassPath/*, files.jsPathClasses, files.jsPathUtilities*/], parallel(/*tsCopy,*/ htmlCopy, jsCopy, imageCopy, sassCopy/*, jsCopyClasses, jsCopyUtilities*/)).on('change', browserSync.stream);
 }
 
 
 //export function as functions are private
 exports.default = series (
-    parallel(tsCopy, htmlCopy, jsCopy, jsCopyClasses, jsCopyUtilities, imageCopy, sassCopy),
+    parallel(/*tsCopy,*/ htmlCopy, jsCopy/*, jsCopyClasses, jsCopyUtilities*/, imageCopy, sassCopy),
     watchTask
 );
