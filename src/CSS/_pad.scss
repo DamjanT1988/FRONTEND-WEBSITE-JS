@@ -3,4 +3,28 @@
 @media only screen and (min-width: 530px) and (max-width: 860px) {
 
    
+    /*FORM*/
+form {
+    font-size: 1.35em;
+    line-height: 1.6em;
+    font-weight: bold;
+    width: 100%;
+}
+
+
+input {
+    font-size: 1.6em;
+}
+
+textarea {
+    font-size: 1.3em;
+}
+
+#wrapperform {
+    width: 100%;
+}
+Textarea {
+    max-width: 350px;
+}
+
 }

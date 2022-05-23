@@ -1,94 +1,345 @@
 @charset "UTF-8";
-/*variabler*/
-/*färgfunktioner*/
-/*mixins*/
-/*desktop-enhet*/
-/*body*/
+/*mMAIN FUNCTIONS*/
 body {
-  background-color: gray;
+  background-color: #be805f;
   font-family: Arial, sans-serif;
 }
 
-/*sidhuvud med lite mellanrum underifrån*/
-header, footer {
-  display: inline-block;
-  width: 100%;
-  background-color: #4d4d4d;
+#wrapper1 {
+  background-color: #fff;
+  max-width: 960px;
+  margin: 0 auto;
+  line-height: 1.3em;
+  padding: 5.25%;
+  max-width: 960px;
+  padding-top: 1%;
+}
+
+/*HUVUDNAVIGATION*/
+.nav {
+  text-transform: uppercase;
+  padding-top: 2%;
+  padding-left: 0%;
+  font-size: 1.2em;
+  float: none;
   position: relative;
+  width: 100%;
+  color: #000;
+  font-weight: bold;
+  padding: 1%;
+  display: inline-block;
+}
+
+.menynamn {
+  background-color: #be805f;
+  padding: 2%;
+  font-size: 1.5em;
+  float: left;
+  color: white;
+  border-color: black;
+  border: solid 2px;
+  text-decoration: none;
+}
+
+.current {
+  background-color: #ffaa7e;
+  padding: 2%;
+  font-size: 1.5em;
+  float: left;
+  color: white;
+  border-color: black;
+  border: solid 2px;
+  text-decoration: none;
+}
+
+/*
+#mainmenu {
+    float: left;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    min-width: 20%;
+    border: solid #eb0808;
+    border-width: 10px;
+    margin-right: 5%;
+}*/
+img {
+  float: none;
+  width: 12%;
+}
+
+#banner {
+  width: 100%;
+}
+
+#textner {
   text-align: center;
-  justify-content: center;
-  font-size: 150%;
-  display: inline-flex;
-  line-height: 2em;
-  padding: 0%;
-  margin-top: 5%;
+  position: relative;
+  font-size: 0.95em;
 }
 
-/*global navigation med store bokstäver & arial-teckensnitt
-relativt i mitt-till höger med svart textfärg*/
-#button1 {
-  background-color: white;
-  font-size: 22px;
-  padding-bottom: 5px;
-  padding-top: 3px;
-  font-weight: bold;
-  border-radius: 30%;
-  background-color: green;
+/*
+.current {
+    border-bottom: solid 8px #4567cc;
 }
 
-#button2 {
-  background-color: white;
-  font-size: 22px;
-  padding-bottom: 5px;
-  padding-top: 3px;
-  font-weight: bold;
-  border-radius: 30%;
-  background-color: purple;
+div.postmain {
+    width: 750px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+*/
+/*LÄNKAR*/
+a {
+  font-weight: bolder;
+  color: white;
 }
 
-#button3 {
-  background-color: white;
-  font-size: 22px;
-  padding-bottom: 5px;
-  padding-top: 3px;
-  font-weight: bold;
-  border-radius: 30%;
-  background-color: BROwn;
+a:hover {
+  color: #000;
+  background-color: red;
 }
 
-/*paragraftext justering; Arial i svart*/
+a.topptextlink {
+  color: black;
+}
+
+a.link1 {
+  color: black;
+}
+
+a.menynamn {
+  color: white;
+}
+
 hr {
-  color: blue;
+  color: #eb0808;
   height: 0px;
   border-style: solid;
   border-width: 6px;
   margin-top: 0%;
 }
 
-a {
-  background: #fec706;
-  opacity: 66%;
-  border-style: solid;
-  border-color: blue;
-  margin-bottom: 7%;
+/*
+.bildprodukt-prodsida {
+    max-width: 330px;
+}
+
+
+.hide {
+    display: none;
+    color: white;
+}
+
+#maincontent {
+    float: none;
+    margin-left: 30%;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+    background-color: white;
+    max-width: 66%;
+}
+*/
+/*FORMULÄR*/
+form {
+  font-size: 1.5em;
+  line-height: 1.5em;
   font-weight: bold;
-  width: 100%;
-  text-align: left;
+}
+
+/*
+#todo {
+    font-size: 0.75em;
+}*/
+input {
+  font-size: 2em;
+}
+
+textarea {
+  font-size: 1.25em;
+}
+
+input[type=radio] {
+  transform: scale(2);
+}
+
+.button1 {
   font-size: 1em;
-  padding: 0%;
-  color: black;
+  background-color: black;
+  color: white;
+  padding: 1%;
+  text-decoration: none;
+  float: right;
+}
+
+.button2 {
+  font-size: 1em;
+  background-color: red;
+  color: white;
+  padding: 1%;
+  text-decoration: none;
+  float: left;
+}
+
+.button3 {
+  font-size: 1em;
+  background-color: black;
+  color: white;
+  padding: 1%;
+  text-decoration: none;
+  float: right;
+}
+
+/*
+.menu {
+    font-size: 1.5em;
+    padding-bottom: 10%;
+}*/
+/*RUBRIKER*/
+h1 {
+  margin-bottom: 30px;
+  font-size: 4em;
+  float: right;
+  position: relative;
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 3em;
+  line-height: 1.25em;
+}
+
+h3 {
+  font-size: 1.75em;
+  line-height: 1.5em;
 }
 
 p {
-  font-weight: bolder;
-  font-size: 1em;
+  font-size: 1.3em;
+  line-height: 1.5em;
 }
 
-/*bilder*/
-img {
+/*SIDFOT*/
+footer {
+  display: inline-block;
   width: 100%;
+  background-color: #be805f;
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  padding: 0%;
+  margin-top: 5%;
 }
 
-/*sidfoten justeras*/
 /*media query satt skärmupplösninh mellan 501-799 pixlar; surfplatta*/
+@media only screen and (min-width: 530px) and (max-width: 860px) {
+  /*FORM*/
+  form {
+    font-size: 1.35em;
+    line-height: 1.6em;
+    font-weight: bold;
+    width: 100%;
+  }
+
+  input {
+    font-size: 1.6em;
+  }
+
+  textarea {
+    font-size: 1.3em;
+  }
+
+  #wrapperform {
+    width: 100%;
+  }
+
+  Textarea {
+    max-width: 350px;
+  }
+}
 /*mobilenhet upp till 500px i bredd i stående form*/
+@media only screen and (max-width: 529px) and (orientation: portrait) {
+  body {
+    background-color: #be805f;
+  }
+
+  #wrapper1 {
+    background-color: #fff;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1.25%;
+    padding-top: 1%;
+  }
+
+  #logo {
+    width: 18%;
+  }
+
+  .menynamn {
+    background-color: #be805f;
+    padding: 1%;
+    font-size: 0.9em;
+    float: left;
+    color: white;
+    border-color: black;
+    border: solid 2px;
+    text-decoration: none;
+  }
+
+  /*
+      div.postmain {
+          width: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+      }    
+  */
+  /*FORM*/
+  form {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-weight: bold;
+    width: 100%;
+  }
+
+  /*
+  #todo {
+      font-size: 0.75em;
+  }*/
+  input {
+    font-size: 1.4em;
+  }
+
+  textarea {
+    font-size: 1em;
+  }
+
+  #wrapperform {
+    width: 100%;
+  }
+
+  Textarea {
+    max-width: 350px;
+  }
+
+  /*RUBRIKER*/
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25em;
+  }
+
+  p {
+    font-size: 1.35em;
+    line-height: 1.35em;
+  }
+}

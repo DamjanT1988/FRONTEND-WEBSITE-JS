@@ -1,90 +1,236 @@
-/*desktop-enhet*/
-
-
-/*body*/
-
 body {
-    background-color: gray;
+    background-color: #be805f;
     font-family: Arial, sans-serif;
 }
 
-/*sidhuvud med lite mellanrum underifrån*/
+#wrapper1 {
+    background-color: #fff;
+    max-width: 960px;
+    margin: 0 auto;
+    line-height: 1.3em;
+    padding: 5.25%;
+    max-width: 960px;
+    padding-top: 1%;
+}
 
-header {
-    display: inline-block;
-    width: 100%;
-    background-color: $darken-colors;
+/*HUVUDNAVIGATION*/
+.nav {
+    text-transform: uppercase;
+    padding-top: 2%;
+    padding-left: 0%;
+    font-size: 1.2em;
+    float: none;
     position: relative;
+    width: 100%;
+    color: #000;
+    font-weight: bold;
+    padding: 1%;
+    display: inline-block;
+}
+
+.menynamn {
+    background-color: #be805f;
+    padding: 2%;
+    font-size: 1.5em;
+    float: left;
+    color: white;
+    border-color: black;
+    border: solid 2px;
+    text-decoration: none;
+}
+
+.current {
+    background-color: #ffaa7e;
+    padding: 2%;
+    font-size: 1.5em;
+    float: left;
+    color: white;
+    border-color: black;
+    border: solid 2px;
+    text-decoration: none;
+}
+/*
+#mainmenu {
+    float: left;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    min-width: 20%;
+    border: solid #eb0808;
+    border-width: 10px;
+    margin-right: 5%;
+}*/
+
+img {
+    float: none;
+    width: 12%;
+}
+
+#banner {
+    width: 100%;
+}
+
+#textner {
     text-align: center;
-    justify-content: center;
-    font-size: 150%;
-    display: inline-flex;
-    line-height: 2em;
-    padding: 0%;
-    margin-top: 5%;
+    position: relative;
+    font-size: 0.95em;
+}
+/*
+.current {
+    border-bottom: solid 8px #4567cc;
 }
 
+div.postmain {
+    width: 750px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+*/
 
+/*LÄNKAR*/
 
-/*global navigation med store bokstäver & arial-teckensnitt
-relativt i mitt-till höger med svart textfärg*/
-
-
-#button1 {
-    @include button ($circle: true);
-    background-color: $button-color1;
+a {
+    font-weight: bolder;
+    color: white;
 }
 
-#button2 {
-    @include button ($circle: true);
-    background-color: $button-color2;
- 
-}
-#button3 {
-    @include button ($circle: true);
-    background-color: $button-color3;
- 
+a:hover {
+    color: #000;
+    background-color: red;
 }
 
+a.topptextlink {
+    color: black;
+}
 
-/*paragraftext justering; Arial i svart*/
+a.link1 {
+    color: black;
+}
+
+a.menynamn {
+    color: white;
+}
 
 hr {
-    color: $line-color;
+    color: #eb0808;
     height: 0px;
     border-style: solid;
     border-width: 6px;
     margin-top: 0%;
 }
 
+/*
+.bildprodukt-prodsida {
+    max-width: 330px;
+}
 
-a {
-    background: $buttonlink-color;
-    opacity: 66%;
-    border-style: solid;
-    border-color: blue;
-    margin-bottom: 7%;
+
+.hide {
+    display: none;
+    color: white;
+}
+
+#maincontent {
+    float: none;
+    margin-left: 30%;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+    background-color: white;
+    max-width: 66%;
+}
+*/
+
+
+/*FORMULÄR*/
+form {
+    font-size: 1.5em;
+    line-height: 1.5em;
     font-weight: bold;
-    width: 100%;
-    text-align: left;
+}
+/*
+#todo {
+    font-size: 0.75em;
+}*/
+
+input {
+    font-size: 2em;
+}
+
+textarea {
+    font-size: 1.25em;
+}
+input[type='radio'] { 
+    transform: scale(2); 
+}
+
+.button1 {
     font-size: 1em;
-    padding: 0%;
-    color: black;
+    background-color: black;
+    color: white;
+    padding: 1%;
+    text-decoration: none;
+    float: right;
+}
+
+.button2 {
+    font-size: 1em;
+    background-color: red;
+    color: white;
+    padding: 1%;
+    text-decoration: none;
+    float: left;
+}
+
+.button3 {
+    font-size: 1em;
+    background-color: black;
+    color: white;
+    padding: 1%;
+    text-decoration: none;
+    float: right;
+}
+
+/*
+.menu {
+    font-size: 1.5em;
+    padding-bottom: 10%;
+}*/
+
+/*RUBRIKER*/
+h1 {
+    margin-bottom: 30px;
+    font-size: 4em;
+    float: right;
+    position: relative;
+    max-width: 100%;
+}
+
+h2 {
+    font-size: 3em;
+    line-height: 1.25em;
+}
+
+h3 {
+    font-size: 1.75em;
+    line-height: 1.5em;
 }
 
 
 p {
-    font-weight: bolder;
-    font-size: 1em;
+    font-size: 1.3em;
+    line-height: 1.5em;
 }
 
-/*bilder*/
-img {
-    width: 100%;
-}
-/*sidfoten justeras*/
-
+/*SIDFOT*/
 footer {
-    @extend header;
+    display: inline-block;
+    width: 100%;
+    background-color: #be805f;
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    padding: 0%;
+    margin-top: 5%;
 }
-

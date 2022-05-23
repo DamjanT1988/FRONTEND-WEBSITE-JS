@@ -1,6 +1,86 @@
 /*mobilenhet upp till 500px i bredd i stående form*/
 
 @media only screen and (max-width: 529px) and (orientation: portrait) {
+    body {
+        background-color: #be805f;
+    }
+
+    #wrapper1 {
+        background-color: #fff;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 1.25%;
+        padding-top: 1%;
+    }
+
+    #logo {
+        width: 18%;
+    }
+
+    .menynamn {
+        background-color: #be805f;
+        padding: 1%;
+        font-size: 0.9em;
+        float: left;
+        color: white;
+        border-color: black;
+        border: solid 2px;
+        text-decoration: none;
+    }
+    /*
+    div.postmain {
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }    
+*/
 
 
+/*FORM*/
+form {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-weight: bold;
+    width: 100%;
+}
+/*
+#todo {
+    font-size: 0.75em;
+}*/
+
+input {
+    font-size: 1.4em;
+}
+
+textarea {
+    font-size: 1em;
+}
+
+#wrapperform {
+    width: 100%;
+}
+Textarea {
+    max-width: 350px;
+}
+
+/*RUBRIKER*/
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        line-height: 1.25em;
+    }
+
+
+    p {
+        font-size: 1.35em;
+        line-height: 1.35em;
+    }
 }
