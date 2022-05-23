@@ -113,7 +113,7 @@ function sassCopy() {
 function watchTask () {
     browserSync.init({
         server: "./pub"});
-    watch([files.tsPath, files.htmlPath, files.jsPath, files.imagePath,/* files.sassPath,*/ files.jsPathClasses, files.jsPathUtilities], parallel(tsCopy, htmlCopy, jsCopy, imageCopy, /*sassCopy,*/ jsCopyClasses, jsCopyUtilities)).on('change', browserSync.reload);
+    watch([/*files.tsPath, files.htmlPath, files.jsPath, files.imagePath, files.sassPath, files.jsPathClasses, files.jsPathUtilities*/], parallel(tsCopy, htmlCopy, jsCopy, imageCopy, sassCopy, jsCopyClasses, jsCopyUtilities)).on('change', browserSync.reload);
 }
 
 
