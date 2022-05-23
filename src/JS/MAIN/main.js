@@ -1,15 +1,16 @@
 "use strict";
 
-/*
-let urlMenu = window.location.pathname;
-let filenameMenu = urlMenu.substring(urlMenu.lastIndexOf('/') + 1);
-if (filenameMenu == "menu.php") {
-    let formMenu = document.getElementById('formMenu');
+
+let urlMenu2 = window.location.pathname;
+let filenameMenu2 = urlMenu2.substring(urlMenu2.lastIndexOf('/') + 1);
+if (filenameMenu2 == "contact.html") {
+    let formMenu = document.getElementById('formContact');
+    console.log(formMenu);
     formMenu.onsubmit = function (event) {
         let xhr = new XMLHttpRequest();
         let formData2 = new FormData(formMenu);
         //open the request
-        xhr.open('POST', 'http://localhost/projekt_webservice_vt22-DamjanT1988/webservice-API.php?idmenu=post')
+        xhr.open('POST', 'http://localhost/projekt_webservice_vt22-DamjanT1988/webservice-API.php?idcontact=post')
         xhr.setRequestHeader("Content-Type", "application/json");
 
         //send the form data
@@ -18,18 +19,13 @@ if (filenameMenu == "menu.php") {
         xhr.onreadystatechange = function () {
             if (xhr.readyState == XMLHttpRequest.DONE) {
                 formMenu.reset(); //reset form after AJAX success or do something else
-                window.location.reload();
+                document.getElementById('messageContact').innerHTML = "Tack för din fråga!";
             }
         }
         //Fail the onsubmit to avoid page refresh.
         return false;
     }
 }
-*/
-
-
-
-
 
 
 

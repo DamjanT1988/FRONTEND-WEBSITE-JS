@@ -72,6 +72,7 @@ function jsCopy () {
 //    .pipe(browserSync.stream());
 }
 
+/*
 //JS-task CLASSES
 function jsCopyClasses () {
     return src(files.jsPathClasses)
@@ -82,7 +83,9 @@ function jsCopyClasses () {
     .pipe(dest('pub/JS/CLASSES'))
 //    .pipe(browserSync.stream());
 }
+*/
 
+/*
 //JS-task UTILITIES
 function jsCopyUtilities () {
     return src(files.jsPathUtilities)
@@ -93,6 +96,7 @@ function jsCopyUtilities () {
     .pipe(dest('pub/JS/UTILITIES'))
 //    .pipe(browserSync.stream());
 }
+*/
 
 //image-task
 function imageCopy () {
