@@ -52,16 +52,11 @@ body {
   text-decoration: none;
 }
 
-/*
-#mainmenu {
-    float: left;
-    font-size: 1.5em;
-    line-height: 1.5em;
-    min-width: 20%;
-    border: solid #eb0808;
-    border-width: 10px;
-    margin-right: 5%;
-}*/
+/*--IMAGES--*/
+.picturestart {
+  width: 100%;
+}
+
 img {
   float: none;
   width: 12%;
@@ -77,18 +72,6 @@ img {
   font-size: 0.95em;
 }
 
-/*
-.current {
-    border-bottom: solid 8px #4567cc;
-}
-
-div.postmain {
-    width: 750px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-*/
 /*LÄNKAR*/
 a {
   font-weight: bolder;
