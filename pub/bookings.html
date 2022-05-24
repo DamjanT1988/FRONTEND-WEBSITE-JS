@@ -1,5 +1,7 @@
+<!--PROGRAMMER: DAMJAN TOSIC, DATO1700@MIUN.STUDENT.SE-->
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <title>BEST foods</title>
     <meta charset="utf-8">
@@ -8,69 +10,79 @@
     <link rel="stylesheet" href="CSS/sass.css">
     <link rel="icon" type="image/x-icon" href="IMAGES/logotyp-favicon.png" />
 </head>
+
 <body>
     <div id="wrapper1">
-    <div id="container">
-        <h1>Bordsbokning!</h1>
-    <a href="admin.php"><img src="IMAGES/logotyp.svg" id="logo" alt="logotyp"></a>
-    <div class="nav">
-    <!--menu-->
-    <a class="menynamn" href="index.html">HEM</a>
-    <a class="menynamn" href="menu.html">MENY</a>
-    <a class="current" href="bookings.html">BORD</a>
-    <a class="menynamn" href="takeaways.html">TAKEAWAY</a>   
-    <a class="menynamn" href="contact.html">KONTAKT</a>
-    <a class="menynamn" href="about.html">OM OSS</a>
-</div>
-<!--content-->
+        <div id="container">
+            <div id="textbanner">
+                <h1>Bordsbokning!</h1><br><br><br><br><br>
+                <p id="textparagraf">Vi finns på Drottningsgatan 1</p>
+            </div>
+            <a href="admin.php"><img src="IMAGES/logotyp.svg" id="logo" alt="logotyp"></a>
+            <nav class="nav">
+                <!--menu-->
+                <a class="menynamn" href="index.html">HEM</a>
+                <a class="menynamn" href="menu.html">MENY</a>
+                <a class="current" href="bookings.html">BORD</a>
+                <a class="menynamn" href="takeaways.html">TAKEAWAY</a>
+                <a class="menynamn" href="contact.html">KONTAKT</a>
+                <a class="menynamn" href="about.html">OM OSS</a>
+            </nav>
+            <!--content-->
 
-<h2>Boka bord nedan!</h2>
+            <h2>Boka bord nedan!</h2>
 
-<h3>Gör så här:</h3>
-<p>Fyll i nedan den tid och bord du önskar! Varje bordsbokning gäller minst två timmar från bokning, Det är kostnadsfritt att boka bord. Avboknings kan göras via telefon eller vår kontaktformulär helst två timmar före.</p>
-<form name="formTable" id="formTable">
-    <label for="name">Ditt namn:</label>
-    <br>
-    <input type="text" name="nametable" id="nametable">
-    <br><br>
-    <label for="phone">Ditt telefonnummer:</label>
-    <br>
-    <input type="number" name="phonetable" id="phonetable" pattern="[0-9]">
-    <br><br>
-    <label for="table">Vilket bordsnummer:</label>
-    <br>
-    <input type="number" name="tabletable" id="tabletable" pattern="[0-9]">
-    <br><br>
-    <label for="time">Från vilken datum och tid:</label>
-    <br>
-    <input type="date" name="datetable" id="datetable" placeholder="datum">
-    <input type="time" name="timetable" id="timetable" placeholder="tid">
-    <br><br>
-    <label for="message">Meddelande till oss om exempelvis firande och fest eller bokning om fler bord (valfri):</label>
-    <br>
-    <textarea form="formTable" name="messagetable" id="messagetable" rows="10" cols="45"></textarea>
-    <br><br>
-    <input type="text" name="typetable" id="typetable" value="Table">
-    <input type="text" name="arrivaltable" id="arrivaltable" value="Restaurangvistelse">
-    <input type="text" name="costtable" id="costtable" value="0">
+            <h3>Gör så här:</h3>
+            <p>Fyll i nedan den tid och bord du önskar! Varje bordsbokning gäller minst två timmar från bokning, Det är
+                kostnadsfritt att boka bord. Avboknings kan göras via telefon eller vår kontaktformulär helst två timmar
+                före.</p>
+            <form name="formTable" id="formTable">
+                <label for="name">Ditt namn:</label>
+                <br>
+                <input type="text" name="nametable" id="nametable">
+                <br><br>
+                <label for="phone">Ditt telefonnummer:</label>
+                <br>
+                <input type="number" name="phonetable" id="phonetable" pattern="[0-9]">
+                <br><br>
+                <label for="table">Vilket bordsnummer:</label>
+                <br>
+                <input type="number" name="tabletable" id="tabletable" pattern="[0-9]">
+                <br><br>
+                <label for="time">Från vilken datum och tid:</label>
+                <br>
+                <input type="date" name="datetable" id="datetable" placeholder="datum">
+                <input type="time" name="timetable" id="timetable" placeholder="tid">
+                <br><br>
+                <label for="message">Meddelande till oss om exempelvis firande och fest eller bokning om fler bord
+                    (valfri):</label>
+                <br>
+                <textarea form="formTable" name="messagetable" id="messagetable" rows="10" cols="45"></textarea>
+                <br><br>
+                <input type="text" name="typetable" id="typetable" value="Table">
+                <input type="text" name="arrivaltable" id="arrivaltable" value="Restaurangvistelse">
+                <input type="text" name="costtable" id="costtable" value="0">
 
-    <input type="submit" class="button2" id="submit" value="Boka bord!">
-    <br>
-    </form>
-    <br><br><br>
-    <div id="messagesend"></div>
-
-    
+                <input type="submit" class="button2" id="submit" value="Boka bord!">
+                <br>
+            </form>
+            <br><br><br>
+            <div id="messagesend"></div>
 
 
-<script src="JS/main.js" type="module" ></script>
-<br><br><br>
-<footer>
-    <p> Telefon: 070-2459369 - Öppettid: Må-Fr 08-22, Lö-Sö 10-23</p>
-<img src="IMAGES/banner.jpg" id="banner" alt="restaurangbild">
-</fooer>
-        <p id="textner"> Webbplatsen är skapad av Damjan Tosic - 2022 med alla rättigheter förbehållna </p>
-    </div><!-- /container -->
-</div><!--wrapper1 -->
+
+
+            <script src="JS/main.js" type="module"></script>
+            <br><br><br>
+            <footer>
+                <p> Telefon: 070-2459369 - Öppettid: Må-Fr 08-22, Lö-Sö 10-23</p>
+                <img src="IMAGES/banner.jpg" id="banner" alt="restaurangbild">
+
+                <p id="textner"> Webbplatsen är skapad av Damjan Tosic - 2022 med alla rättigheter förbehållna </p>
+            </footer>
+        </div><!-- /container -->
+    </div>
+    <!--wrapper1 -->
 </body>
+
 </html>

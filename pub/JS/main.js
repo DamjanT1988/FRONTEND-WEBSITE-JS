@@ -1,3 +1,4 @@
+//--PROGRAMMER: DAMJAN TOSIC, DATO1700@MIUN.STUDENT.SE---//
 "use strict";
 
 import Post from './CLASSES/post.js';

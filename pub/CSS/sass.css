@@ -1,5 +1,6 @@
 @charset "UTF-8";
-/*mMAIN FUNCTIONS */
+/*--PROGRAMMER: DAMJAN TOSIC, DATO1700@MIUN.STUDENT.SE---*/
+/*MAIN FUNCTIONS */
 body {
   background-color: #be805f;
   font-family: Arial, sans-serif;
@@ -16,6 +17,11 @@ body {
 }
 
 /*HUVUDNAVIGATION*/
+#textbanner, #textparagraf {
+  float: right;
+  font-weight: 500;
+}
+
 .nav {
   text-transform: uppercase;
   padding-top: 2%;
@@ -60,10 +66,6 @@ body {
 img {
   float: none;
   width: 12%;
-}
-
-#banner {
-  width: 100%;
 }
 
 #textner {
@@ -141,6 +143,37 @@ hr {
   font-weight: bolder;
 }
 
+/*MAP*/
+.gmap_canvas, .mapouter {
+  border-radius: 35px;
+  padding-bottom: 3%;
+}
+
+.mapouter {
+  position: relative;
+  text-align: left;
+  height: 285px;
+  max-width: 670px;
+  min-width: 350px;
+  width: 100%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 285px;
+  max-width: 670px;
+  min-width: 350px;
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  max-width: 670PX;
+  height: 325PX;
+}
+
 /*FORMULÄR*/
 form {
   font-size: 1.5em;
@@ -161,28 +194,28 @@ input[type=radio] {
 }
 
 .button1 {
-  font-size: 1em;
+  font-size: 1.25em;
   background-color: black;
   color: white;
-  padding: 1%;
+  padding: 2%;
   text-decoration: none;
   float: right;
 }
 
 .button2 {
-  font-size: 1em;
+  font-size: 1.25em;
   background-color: red;
   color: white;
-  padding: 1%;
+  padding: 2%;
   text-decoration: none;
   float: left;
 }
 
 .button3 {
-  font-size: 1em;
+  font-size: 1.25em;
   background-color: black;
   color: white;
-  padding: 1%;
+  padding: 2%;
   text-decoration: none;
   float: right;
 }
@@ -227,6 +260,10 @@ footer {
   margin-top: 5%;
 }
 
+#banner {
+  width: 100%;
+}
+
 /*media query satt skärmupplösninh mellan 501-799 pixlar; surfplatta*/
 @media only screen and (min-width: 530px) and (max-width: 860px) {
   /*FORM*/
@@ -256,7 +293,7 @@ footer {
 /*mobilenhet upp till 500px i bredd i stående form*/
 @media only screen and (max-width: 529px) and (orientation: portrait) {
   body {
-    background-color: #be805f;
+    background-color: #fff;
   }
 
   #wrapper1 {
@@ -282,14 +319,17 @@ footer {
     text-decoration: none;
   }
 
-  /*
-      div.postmain {
-          width: 100%;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-      }    
-  */
+  #menuwrap {
+    margin-left: 4%;
+    width: 90%;
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+
+  #picturemenuwrap {
+    width: 100%;
+  }
+
   /*FORM*/
   form {
     font-size: 1.25em;
@@ -298,10 +338,6 @@ footer {
     width: 100%;
   }
 
-  /*
-  #todo {
-      font-size: 0.75em;
-  }*/
   input {
     font-size: 1.4em;
   }

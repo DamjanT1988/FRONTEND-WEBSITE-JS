@@ -1,3 +1,5 @@
+//--PROGRAMMER: DAMJAN TOSIC, DATO1700@MIUN.STUDENT.SE---//
+
 "use strict";
 
 
@@ -32,9 +34,9 @@ class Get {
         //print out course on page
         function writeMenu(dataSQL) {
             //get DOM element with ul list
-//            const starterEl = document.getElementById("starter");
+            //            const starterEl = document.getElementById("starter");
             //clear list
-//            starterEl.innerHTML = "";
+            //            starterEl.innerHTML = "";
 
             //loop through each JS-object in the array from data 
             //with forEach & write the list in DOM
@@ -60,8 +62,8 @@ class Get {
                     const otherEl = document.getElementById("other");
                     otherEl.innerHTML += `<li class="menulist" id="${menu.id}"> ${menu.item_name}  (#${menu.id}) - pris: ${menu.price} kr</li>`;
                 }
-                
-                
+
+
             });
 
         }

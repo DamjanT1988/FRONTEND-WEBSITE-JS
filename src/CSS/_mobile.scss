@@ -2,7 +2,7 @@
 
 @media only screen and (max-width: 529px) and (orientation: portrait) {
     body {
-        background-color: #be805f;
+        background-color: #fff;
     }
 
     #wrapper1 {
@@ -27,15 +27,16 @@
         border: solid 2px;
         text-decoration: none;
     }
-    /*
-    div.postmain {
-        width: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }    
-*/
+#menuwrap {
+    margin-left: 4%;
+    width: 90%;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
 
+#picturemenuwrap {
+    width: 100%;
+}
 
 /*FORM*/
 form {
@@ -44,10 +45,6 @@ form {
     font-weight: bold;
     width: 100%;
 }
-/*
-#todo {
-    font-size: 0.75em;
-}*/
 
 input {
     font-size: 1.4em;
