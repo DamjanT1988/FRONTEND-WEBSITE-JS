@@ -1,18 +1,26 @@
 "use strict";
 
 import Post from './CLASSES/post.js';
+import Get from './CLASSES/get.js';
 
 let post = new Post();
+let get = new Get();
 
 //---CONTACT FORM POST
 //control if on right page
-let urlMenu = window.location.pathname;
-let filenameMenu = urlMenu.substring(urlMenu.lastIndexOf('/') + 1);
-if (filenameMenu == "contact.html") {
+let urlContact = window.location.pathname;
+let filenameContact = urlContact.substring(urlContact.lastIndexOf('/') + 1);
+if (filenameContact == "contact.html") {
     post.createContactInfo('nameguest', 'emailguest', 'contentguest', 'http://localhost/projekt_webservice_vt22-DamjanT1988/webservice-API.php?idcontact=post');
     }
 
-
+//---MENU
+//control if on right page
+let urlMenu = window.location.pathname;
+let filenameMenu = urlMenu.substring(urlMenu.lastIndexOf('/') + 1);
+if (filenameMenu == "menu.html") {
+    get.getMenu();
+    }
 
 
 
