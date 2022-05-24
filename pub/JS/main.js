@@ -19,7 +19,7 @@ let urlMenu = window.location.pathname;
 let filenameMenu = urlMenu.substring(urlMenu.lastIndexOf('/') + 1);
 
 if (filenameMenu == "menu.html") {
-  get.getMenu();
+  get.getMenu('http://localhost/projekt_webservice_vt22-DamjanT1988/webservice-API.php?idmenu=menuall');
 } //---CONTACT FORM POST
 
 /*

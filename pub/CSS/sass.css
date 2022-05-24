@@ -103,26 +103,29 @@ hr {
   margin-top: 0%;
 }
 
-/*
-.bildprodukt-prodsida {
-    max-width: 330px;
+/*MENU*/
+#menuwrap {
+  font-size: 1.1em;
+  font-weight: bolder;
+  float: left;
+  width: 45%;
 }
 
-
-.hide {
-    display: none;
-    color: white;
+#picturemenuwrap {
+  width: 45%;
+  float: right;
 }
 
-#maincontent {
-    float: none;
-    margin-left: 30%;
-    margin-bottom: 5%;
-    padding-bottom: 5%;
-    background-color: white;
-    max-width: 66%;
+.picturemenu {
+  width: 100%;
+  margin-top: 15%;
 }
-*/
+
+.menulist {
+  font-size: 1.15em;
+  margin-top: 20px;
+}
+
 /*KONTAKT*/
 #messageContact {
   font-size: 2.5em;
