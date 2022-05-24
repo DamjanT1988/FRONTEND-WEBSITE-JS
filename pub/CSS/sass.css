@@ -296,6 +296,18 @@ footer {
     background-color: #fff;
   }
 
+  #textbanner {
+    float: right;
+    font-weight: 500;
+    font-size: 0.8em;
+  }
+
+  #textbanner {
+    float: right;
+    font-weight: 500;
+    font-size: 0.9em;
+  }
+
   #wrapper1 {
     background-color: #fff;
     max-width: 500px;
@@ -310,13 +322,14 @@ footer {
 
   .menynamn {
     background-color: #be805f;
-    padding: 1%;
-    font-size: 1.1em;
+    padding: 3%;
+    font-size: 1.3em;
     float: left;
     color: white;
     border-color: black;
     border: solid 2px;
     text-decoration: none;
+    margin: 1%;
   }
 
   #menuwrap {
@@ -324,6 +337,17 @@ footer {
     width: 90%;
     font-size: 1.5em;
     line-height: 1.5em;
+  }
+
+  .current {
+    background-color: #ffaa7e;
+    padding: 3%;
+    font-size: 1.45em;
+    float: left;
+    color: white;
+    border-color: black;
+    border: solid 0px;
+    text-decoration: none;
   }
 
   #picturemenuwrap {
