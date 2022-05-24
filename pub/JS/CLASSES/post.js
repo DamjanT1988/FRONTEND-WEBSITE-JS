@@ -1,32 +1,28 @@
 class Post {
-  /*
-      constructor () {
-      }
-  */
-  createContactInfo() {
+  constructor() {}
+
+  createContactInfo(name, email, content, url) {
     //define submitbutton
     const submitButton = document.getElementById("submit"); //declare event listener
 
     submitButton.addEventListener("click", createContact); //declare var for DDOM elements
 
-    const nameInput = document.getElementById("nameguest");
-    const emailInput = document.getElementById("emailguest");
-    const contentInput = document.getElementById("contentguest"); //API url
-
-    let url = 'http://localhost/projekt_webservice_vt22-DamjanT1988/webservice-API.php?idcontact=post';
+    const nameInput = document.getElementById(name);
+    const emailInput = document.getElementById(email);
+    const contentInput = document.getElementById(content);
 
     function createContact() {
       //prevent list to add same thing twice
       event.preventDefault(); //get values from clicked list items/objects
 
-      let name = nameInput.value;
-      let email = emailInput.value;
-      let content = contentInput.value; //make values to JSON-objects (strings)
+      let name1 = nameInput.value;
+      let email1 = emailInput.value;
+      let content1 = contentInput.value; //make values to JSON-objects (strings)
 
       let jsonString = JSON.stringify({
-        nameguest: name,
-        emailguest: email,
-        contentguest: content
+        nameguest: name1,
+        emailguest: email1,
+        contentguest: content1
       }); //send data to databas with POST by FETCH
 
       fetch(url, {

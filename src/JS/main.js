@@ -5,15 +5,12 @@ import Post from './CLASSES/post.js';
 let post = new Post();
 
 //---CONTACT FORM POST
-
 //control if on right page
 let urlMenu = window.location.pathname;
 let filenameMenu = urlMenu.substring(urlMenu.lastIndexOf('/') + 1);
 if (filenameMenu == "contact.html") {
-    post.createContactInfo();
+    post.createContactInfo('nameguest', 'emailguest', 'contentguest', 'http://localhost/projekt_webservice_vt22-DamjanT1988/webservice-API.php?idcontact=post');
     }
-
-
 
 
 
