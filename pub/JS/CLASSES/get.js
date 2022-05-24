@@ -23,10 +23,6 @@ class Get {
     }); //print out course on page
 
     function writeMenu(dataSQL) {
-      //get DOM element with ul list
-      //            const starterEl = document.getElementById("starter");
-      //clear list
-      //            starterEl.innerHTML = "";
       //loop through each JS-object in the array from data 
       //with forEach & write the list in DOM
       dataSQL.forEach(menu => {
