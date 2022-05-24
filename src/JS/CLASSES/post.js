@@ -66,9 +66,9 @@ console.log(jsonString);
             })
                 //turn response to JSON
                 .then(response => response.json())
-              //  .then(clearTableForm())
+                .then(clearTableForm())
         }
- /*   
+    
         //clear form data text
         function clearTableForm() {
             //clear each form area
@@ -78,12 +78,13 @@ console.log(jsonString);
             dateInput.value = "";
             timeInput.value = "";
             messageInput.value = "";
-            typeInput.value = "";
-            arrivalInput.value = "";
-            costInput.value = "";
+            //typeInput.value = "";
+            //arrivalInput.value = "";
+            //costInput.value = "";
+            
             //print messade the question is sent
-            document.getElementById('messageTable').innerHTML = "Tack för din bokning!"
-               }*/
+            document.getElementById('messagesent').innerHTML = "Tack för din beställning!"
+               }
     
     }
         

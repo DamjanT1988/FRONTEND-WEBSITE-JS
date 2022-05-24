@@ -55,25 +55,24 @@ class Post {
         },
         body: jsonString
       }) //turn response to JSON
-      .then(response => response.json()); //  .then(clearTableForm())
-    }
-    /*   
-           //clear form data text
-           function clearTableForm() {
-               //clear each form area
-               nameInput.value = "";
-               phoneInput.value = "";
-               tableInput.value = "";
-               dateInput.value = "";
-               timeInput.value = "";
-               messageInput.value = "";
-               typeInput.value = "";
-               arrivalInput.value = "";
-               costInput.value = "";
-               //print messade the question is sent
-               document.getElementById('messageTable').innerHTML = "Tack för din bokning!"
-                  }*/
+      .then(response => response.json()).then(clearTableForm());
+    } //clear form data text
 
+
+    function clearTableForm() {
+      //clear each form area
+      nameInput.value = "";
+      phoneInput.value = "";
+      tableInput.value = "";
+      dateInput.value = "";
+      timeInput.value = "";
+      messageInput.value = ""; //typeInput.value = "";
+      //arrivalInput.value = "";
+      //costInput.value = "";
+      //print messade the question is sent
+
+      document.getElementById('messagesent').innerHTML = "Tack för din beställning!";
+    }
   }
 
   createContactInfo(name, email, content, url) {

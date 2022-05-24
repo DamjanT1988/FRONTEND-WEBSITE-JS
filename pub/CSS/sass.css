@@ -33,7 +33,7 @@ body {
 .menynamn {
   background-color: #be805f;
   padding: 2%;
-  font-size: 1.5em;
+  font-size: 1.25em;
   float: left;
   color: white;
   border-color: black;
@@ -44,7 +44,7 @@ body {
 .current {
   background-color: #ffaa7e;
   padding: 2%;
-  font-size: 1.5em;
+  font-size: 1.25em;
   float: left;
   color: white;
   border-color: black;
@@ -126,7 +126,7 @@ hr {
   margin-top: 20px;
 }
 
-#messageTable {
+#messagesent {
   font-size: 2.5em;
   font-weight: bolder;
 }

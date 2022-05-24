@@ -29,6 +29,13 @@ if (filenameTable == "bookings.html") {
     post.createOrder('nametable', 'phonetable', 'tabletable', 'datetable', 'timetable', 'messagetable', 'typetable', 'arrivaltable', 'costtable', 'http://localhost/projekt_webservice_vt22-DamjanT1988/webservice-API.php?idorder=post');
     }
 
+//control if on right page
+let urlTakeaway = window.location.pathname;
+let filenameTakeaway = urlTakeaway.substring(urlTakeaway.lastIndexOf('/') + 1);
+if (filenameTakeaway == "takeaways.html") {
+    post.createOrder('nametable', 'phonetable', 'tabletable', 'datetable', 'timetable', 'messagetable', 'typetable', 'arrivaltable', 'costtable', 'http://localhost/projekt_webservice_vt22-DamjanT1988/webservice-API.php?idorder=post');
+    }
+
 
 
 
