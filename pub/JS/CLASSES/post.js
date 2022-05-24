@@ -3,6 +3,75 @@
 class Post {
   constructor() {}
 
+  createOrder(name, phone, table, date, time, message, type, arrival, cost, url) {
+    //define submitbutton
+    const submitButton = document.getElementById("submit"); //declare event listener
+
+    submitButton.addEventListener("click", createOrder); //declare var for DDOM elements 
+
+    const nameInput = document.getElementById(name);
+    const phoneInput = document.getElementById(phone);
+    const tableInput = document.getElementById(table);
+    const dateInput = document.getElementById(date);
+    const timeInput = document.getElementById(time);
+    const messageInput = document.getElementById(message);
+    const typeInput = document.getElementById(type);
+    const arrivalInput = document.getElementById(arrival);
+    const costInput = document.getElementById(cost);
+
+    function createOrder() {
+      //prevent list to add same thing twice
+      event.preventDefault(); //get values from clicked list items/objects
+
+      let name1 = nameInput.value;
+      let phone1 = phoneInput.value;
+      let table1 = tableInput.value;
+      let date1 = dateInput.value;
+      let time1 = timeInput.value;
+      let message1 = messageInput.value;
+      let type1 = typeInput.value;
+      let arrival1 = arrivalInput.value;
+      let cost1 = costInput.value; //make values to JSON-objects (strings)
+
+      let jsonString = JSON.stringify({
+        customer_name: name1,
+        customer_phone: phone1,
+        content: table1,
+        date_order: date1,
+        time_order: time1,
+        message: message1,
+        type: type1,
+        pickup_arrival: arrival1,
+        cost: cost1
+      }); //send data to databas with POST by FETCH
+
+      fetch(url, {
+        method: "POST",
+        headers: {
+          "content-type": "application/json"
+        },
+        body: jsonString
+      }) //turn response to JSON
+      .then(response => response.json()).then(clearTableForm());
+    } //clear form data text
+
+
+    function clearTableForm() {
+      //clear each form area
+      nameInput.value = "";
+      phoneInput.value = "";
+      tableInput.value = "";
+      dateInput.value = "";
+      timeInput.value = "";
+      messageInput.value = "";
+      typeInput.value = "";
+      arrivalInput.value = "";
+      costInput.value = ""; //print messade the question is sent
+
+      document.getElementById('messageContact').innerHTML = "Tack för din fråga!";
+    }
+  }
+
   createContactInfo(name, email, content, url) {
     //define submitbutton
     const submitButton = document.getElementById("submit"); //declare event listener

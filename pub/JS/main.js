@@ -20,6 +20,14 @@ let filenameMenu = urlMenu.substring(urlMenu.lastIndexOf('/') + 1);
 
 if (filenameMenu == "menu.html") {
   get.getMenu('http://localhost/projekt_webservice_vt22-DamjanT1988/webservice-API.php?idmenu=menuall');
+} //control if on right page
+
+
+let urlTable = window.location.pathname;
+let filenameTable = urlTable.substring(urlTable.lastIndexOf('/') + 1);
+
+if (filenameTable == "bookings.html") {
+  post.createOrder('nametable', 'phonetable', 'tabletable', 'datetable', 'timetable', 'messagetable', 'typetable', 'arrivaltable', 'costtable', 'http://localhost/projekt_webservice_vt22-DamjanT1988/webservice-API.php?idorder=post');
 } //---CONTACT FORM POST
 
 /*
