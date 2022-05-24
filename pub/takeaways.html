@@ -37,24 +37,24 @@
             <p>Fyll i nedan det du vill köpa och hämta hos oss samt när. Hämtningen sker inom våra öppettider och hämtas
                 inom 30 minuter av utsatt tid. Betalning sker på plats med kontanter eller Mastercard-/VISA-kort.</p>
             <form name="formTakeaway" id="formTakeaway">
-                <label for="name">Ditt namn:</label>
+                <label for="nametable">Ditt namn:</label>
                 <br>
                 <input type="text" name="nametable" id="nametable">
                 <br><br>
-                <label for="phone">Ditt telefonnummer:</label>
+                <label for="phonetable">Ditt telefonnummer:</label>
                 <br>
-                <input type="number" name="phonetable" id="phonetable" pattern="[0-9]">
+                <input type="tel" name="phonetable" id="phonetable">
                 <br><br>
-                <label for="table">Vilket menunummer vill du hämta (läs under "menyer" under "övrigt"):</label>
+                <label for="tabletable">Vilket menunummer vill du hämta (läs under "menyer" under "övrigt"):</label>
                 <br>
-                <input type="number" name="tabletable" id="tabletable" pattern="[0-9]">
+                <input type="text" name="tabletable" id="tabletable" placeholder="Endast siffror">
                 <br><br>
-                <label for="time">Vilken datum och tid vill du hämta din beställning (kolla tidschema ovan):</label>
+                <label for="timetable">Vilken datum och tid vill du hämta din beställning (kolla tidschema ovan):</label>
                 <br>
-                <input type="date" name="datetable" id="datetable" placeholder="datum">
-                <input type="time" name="timetable" id="timetable" placeholder="tid">
+                <input type="date" name="datetable" id="datetable" >
+                <input type="time" name="timetable" id="timetable" >
                 <br><br>
-                <label for="message">Meddelande om du vill lägga till annat i beställningen genom ytterligare menunummer
+                <label for="messagetable">Meddelande om du vill lägga till annat i beställningen genom ytterligare menunummer
                     eller vilken dryck, sås, krydda etc. du vill ha</label>
                 <br>
                 <textarea form="formTakeaway" name="messagetable" id="messagetable" rows="10" cols="45"></textarea>
