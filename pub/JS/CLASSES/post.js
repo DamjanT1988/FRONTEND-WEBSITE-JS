@@ -18,6 +18,7 @@ class Post {
     const typeInput = document.getElementById(type);
     const arrivalInput = document.getElementById(arrival);
     const costInput = document.getElementById(cost);
+    console.log(costInput);
 
     function createOrder() {
       //prevent list to add same thing twice
@@ -31,19 +32,21 @@ class Post {
       let message1 = messageInput.value;
       let type1 = typeInput.value;
       let arrival1 = arrivalInput.value;
-      let cost1 = costInput.value; //make values to JSON-objects (strings)
+      let cost1 = costInput.value;
+      console.log(cost1); //take values to JSON-objects (strings)
 
       let jsonString = JSON.stringify({
-        customer_name: name1,
-        customer_phone: phone1,
-        content: table1,
-        date_order: date1,
-        time_order: time1,
-        message: message1,
-        type: type1,
-        pickup_arrival: arrival1,
-        cost: cost1
-      }); //send data to databas with POST by FETCH
+        customernamenew: name1,
+        customerphonenew: phone1,
+        contentnew: table1,
+        datenew: date1,
+        timenew: time1,
+        messagenew: message1,
+        typenew: type1,
+        pickuparrivalnew: arrival1,
+        costnew: cost1
+      });
+      console.log(jsonString); //send data to databas with POST by FETCH
 
       fetch(url, {
         method: "POST",
@@ -52,24 +55,25 @@ class Post {
         },
         body: jsonString
       }) //turn response to JSON
-      .then(response => response.json()).then(clearTableForm());
-    } //clear form data text
-
-
-    function clearTableForm() {
-      //clear each form area
-      nameInput.value = "";
-      phoneInput.value = "";
-      tableInput.value = "";
-      dateInput.value = "";
-      timeInput.value = "";
-      messageInput.value = "";
-      typeInput.value = "";
-      arrivalInput.value = "";
-      costInput.value = ""; //print messade the question is sent
-
-      document.getElementById('messageContact').innerHTML = "Tack för din fråga!";
+      .then(response => response.json()); //  .then(clearTableForm())
     }
+    /*   
+           //clear form data text
+           function clearTableForm() {
+               //clear each form area
+               nameInput.value = "";
+               phoneInput.value = "";
+               tableInput.value = "";
+               dateInput.value = "";
+               timeInput.value = "";
+               messageInput.value = "";
+               typeInput.value = "";
+               arrivalInput.value = "";
+               costInput.value = "";
+               //print messade the question is sent
+               document.getElementById('messageTable').innerHTML = "Tack för din bokning!"
+                  }*/
+
   }
 
   createContactInfo(name, email, content, url) {

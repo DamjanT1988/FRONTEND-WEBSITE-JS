@@ -126,6 +126,15 @@ hr {
     margin-top: 20px;
 }
 
+#messageTable {
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+#arrivaltable, #costtable, #typetable {
+    display: none;
+}
+
 /*KONTAKT*/
 
 #messageContact {

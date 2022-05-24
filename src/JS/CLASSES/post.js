@@ -26,6 +26,7 @@ class Post {
         const arrivalInput = document.getElementById(arrival);
         const costInput = document.getElementById(cost);
         
+console.log(costInput);
       function createOrder() {
             //prevent list to add same thing twice
             event.preventDefault();
@@ -40,21 +41,21 @@ class Post {
             let type1 = typeInput.value;
             let arrival1 = arrivalInput.value;
             let cost1 = costInput.value;
-    
-            //make values to JSON-objects (strings)
+console.log(cost1);    
+            //take values to JSON-objects (strings)
             let jsonString = JSON.stringify({
-                customer_name: name1,
-                customer_phone: phone1,
-                content: table1,
-                date_order: date1,
-                time_order: time1,
-                message: message1,
-                type: type1,
-                pickup_arrival: arrival1,
-                cost: cost1
+                customernamenew: name1,
+                customerphonenew: phone1,
+                contentnew: table1,
+                datenew: date1,
+                timenew: time1,
+                messagenew: message1,
+                typenew: type1,
+                pickuparrivalnew: arrival1,
+                costnew: cost1
     
             });
-    
+console.log(jsonString);
             //send data to databas with POST by FETCH
             fetch(url, {
                 method: "POST",
@@ -65,9 +66,9 @@ class Post {
             })
                 //turn response to JSON
                 .then(response => response.json())
-                .then(clearTableForm())
+              //  .then(clearTableForm())
         }
-    
+ /*   
         //clear form data text
         function clearTableForm() {
             //clear each form area
@@ -81,8 +82,8 @@ class Post {
             arrivalInput.value = "";
             costInput.value = "";
             //print messade the question is sent
-            document.getElementById('messageContact').innerHTML = "Tack för din fråga!"
-        }
+            document.getElementById('messageTable').innerHTML = "Tack för din bokning!"
+               }*/
     
     }
         
