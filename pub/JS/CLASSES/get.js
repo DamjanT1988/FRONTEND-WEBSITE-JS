@@ -53,6 +53,37 @@ class Get {
         }
       });
     }
+  } //read from web service
+
+
+  getTable(url) {
+    //do a FETCH call
+    fetch(url) //PROMISE (.then), do this with it: response 
+    .then(response => {
+      //do a control to check if 200
+      if (response.status != 200) {
+        //anything else then OK or 200, return
+        return;
+      } //on 200, do this with JSON data
+
+
+      return response.json() //response from web service sent to another function to print
+      //response.json() becomes data
+      .then(data => writeTable(data)) //at error, do this
+      .catch(err => console.log(err));
+    }); //print out course on page
+
+    function writeTable(dataSQL) {
+      //loop through each JS-object in the array from data 
+      //with forEach & write the list in DOM
+      dataSQL.forEach(menu => {
+        if (menu.type == 'Table') {
+          //get DOM element with ul list
+          const starterEl = document.getElementById("table");
+          starterEl.innerHTML += `<li class="tablelist" id="${menu.id}"> Bord #${menu.content} från kl. ${menu.time_order} den ${menu.date_order} kan INTE bokas!</li><br>`;
+        }
+      });
+    }
   }
 
 } //export to use it elsewhere
