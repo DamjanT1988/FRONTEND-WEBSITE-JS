@@ -2,13 +2,14 @@
 
 "use strict";
 
+//class
 class Post {
 
-
+    //constructor
     constructor() {
     }
 
-
+    //run function
     createOrder(name, phone, table, date, time, message, type, arrival, cost, url) {
 
         //define submitbutton
@@ -28,7 +29,6 @@ class Post {
         const arrivalInput = document.getElementById(arrival);
         const costInput = document.getElementById(cost);
 
-        console.log(costInput);
         function createOrder() {
             //prevent list to add same thing twice
             event.preventDefault();

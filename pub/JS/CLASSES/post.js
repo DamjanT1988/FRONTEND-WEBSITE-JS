@@ -1,8 +1,10 @@
 //--PROGRAMMER: DAMJAN TOSIC, DATO1700@MIUN.STUDENT.SE---//
-"use strict";
+"use strict"; //class
 
 class Post {
-  constructor() {}
+  //constructor
+  constructor() {} //run function
+
 
   createOrder(name, phone, table, date, time, message, type, arrival, cost, url) {
     //define submitbutton
@@ -19,7 +21,6 @@ class Post {
     const typeInput = document.getElementById(type);
     const arrivalInput = document.getElementById(arrival);
     const costInput = document.getElementById(cost);
-    console.log(costInput);
 
     function createOrder() {
       //prevent list to add same thing twice
