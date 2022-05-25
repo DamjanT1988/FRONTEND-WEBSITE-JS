@@ -98,7 +98,7 @@ class Get {
                 if (menu.type == 'Table') {
                     //get DOM element with ul list
                     const starterEl = document.getElementById("table");
-                    starterEl.innerHTML += `<li class="tablelist" id="${menu.id}"> Bord #${menu.content} från kl. ${menu.time_order} den ${menu.date_order} kan INTE bokas!</li><br>`;
+                    starterEl.innerHTML += `<li class="tablelist"> Bord #${menu.content} från kl. ${menu.time_order} den ${menu.date_order} kan INTE bokas!</li><br>`;
                 }
 
             });

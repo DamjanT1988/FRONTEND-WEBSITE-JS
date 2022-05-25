@@ -12,6 +12,15 @@ let filenameContact = urlContact.substring(urlContact.lastIndexOf('/') + 1);
 
 if (filenameContact == "contact.html") {
   post.createContactInfo('nameguest', 'emailguest', 'contentguest', 'http://studenter.miun.se/~dato1700/writeable/dt173g/project/projekt_webservice_vt22-DamjanT1988/webservice-API.php?idcontact=post');
+} //---TABLE
+//control if on right page
+
+
+let urlTableGet = window.location.pathname;
+let filenameTableGet = urlTableGet.substring(urlTableGet.lastIndexOf('/') + 1);
+
+if (filenameTableGet = "bookings.html") {
+  get.getTable('http://studenter.miun.se/~dato1700/writeable/dt173g/project/projekt_webservice_vt22-DamjanT1988/webservice-API.php?idorder=orderall');
 } //---MENU
 //control if on right page
 
@@ -37,13 +46,4 @@ let filenameTakeaway = urlTakeaway.substring(urlTakeaway.lastIndexOf('/') + 1);
 
 if (filenameTakeaway == "takeaways.html") {
   post.createOrder('nametable', 'phonetable', 'tabletable', 'datetable', 'timetable', 'messagetable', 'typetable', 'arrivaltable', 'costtable', 'http://studenter.miun.se/~dato1700/writeable/dt173g/project/projekt_webservice_vt22-DamjanT1988/webservice-API.php?idorder=post');
-} //---MENU
-//control if on right page
-
-
-let urlTableGet = window.location.pathname;
-let filenameTableGet = urlTableGet.substring(urlTableGet.lastIndexOf('/') + 1);
-
-if (filenameTableGet = "bookings.html") {
-  get.getTable('http://studenter.miun.se/~dato1700/writeable/dt173g/project/projekt_webservice_vt22-DamjanT1988/webservice-API.php?idorder=orderall');
 }
