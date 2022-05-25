@@ -1,5 +1,5 @@
 body {
-    background-color: #be805f;
+    background-color: $background-color;
     font-family: Arial, sans-serif;
 }
 
@@ -34,7 +34,7 @@ body {
 }
 
 .menynamn {
-    background-color: #be805f;
+    background-color: $background-color;
     padding: 2%;
     font-size: 1.25em;
     float: left;
@@ -198,7 +198,7 @@ input[type='radio'] {
 
 .button1 {
     font-size: 1.25em;
-    background-color: black;
+    background-color: $button-color1;
     color: white;
     padding: 2%;
     text-decoration: none;
@@ -207,7 +207,7 @@ input[type='radio'] {
 
 .button2 {
     font-size: 1.25em;
-    background-color: red;
+    background-color: $button-color2;
     color: white;
     padding: 2%;
     text-decoration: none;
@@ -216,7 +216,7 @@ input[type='radio'] {
 
 .button3 {
     font-size: 1.25em;
-    background-color: black;
+    background-color: $button-color1;
     color: white;
     padding: 2%;
     text-decoration: none;
@@ -255,7 +255,7 @@ p {
 footer {
     display: inline-block;
     width: 100%;
-    background-color: #be805f;
+    background-color:$footer-color;
     color: #ffffff;
     position: relative;
     text-align: center;
