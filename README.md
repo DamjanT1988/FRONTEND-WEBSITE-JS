@@ -1,5 +1,5 @@
 # PROJEKT - WEBBTPLATSEN
-Syftet med webbtjänsten är att:
+Syftet med webbplatsen är att:
 * bekanta sig med relevanta begrepp & förstå hur att använda dessa
 * använda Fetch-API i att konsumera en webbtjänst
 * skapa en heltäckande webbplats som tillgodoser målgruppens behov
